@@ -1,0 +1,166 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  text-align: center;
+	font-size: 1.25em;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav {
+  margin: 15px 0 15px 0;
+}
+
+.main-nav li {
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+	font-size: 1.2em;
+	color: #3acec2;
+	text-transform: uppercase;
+  display: block;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+.col {
+  padding: 20px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  
+  .content {
+    width: 80%;
+    max-width: 1150px;
+    text-align: center;
+  }
+
+  .col {
+    text-align: center;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+    float: left;
+  }
+
+  .name {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-right: 50px;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1023px) {
+
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .tertiary {
+    width: 30%;
+  }
+
+  .secondary {
+    width: 40%;
+  }
+
+}
+  
