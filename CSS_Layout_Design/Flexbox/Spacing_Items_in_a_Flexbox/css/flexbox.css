@@ -1,0 +1,23 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+  flex-direction: row; /* Controls the layout/direction of the flex container's items */
+  flex-wrap: wrap; /* This controls whether or not the container wraps the items or cuts them off when */
+                   /* the container gets too small -- Very useful in rows of columns -- when columns run */
+                   /* out of space they automatically 'wrap' to the next line */
+  justify-content: flex-end; /* This evens out the spacing depending on what side the items need to be on */
+                           /* and is applied *after* the margins and padding are applied to the items and */
+                           /* container -- Can be used for navigation buttons (flex-end) or to space items */
+                           /* equally (space-between) or (space-around) */
+}
+
+.item-2 {
+    margin-right: auto; /* Margins have a big impact on flex containers. Setting the second item's right */
+                        /* margin to auto will move the first and second item to the left side and leave */
+                        /* the other items on the right side -- can be useful in navigation menus with */
+                        /* logos -- i.e. moving the logo to the left side but leaving the nav links flush */
+                        /* to the right side */
+}
