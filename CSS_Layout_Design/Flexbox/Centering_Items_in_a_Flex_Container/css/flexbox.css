@@ -1,0 +1,21 @@
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	min-height: 50vh;
+  
+  /* justify-content: center;  There are three ways to center flex container content. */
+  /* align-items: center; The first is by setting justify-content and align-items of */
+                         /* the flex container to center, centering all items within */         
+}
+
+.item {
+  /* align-self: center; The second is by setting justify-content: center on the container */
+                         /* and then setting align-self: center on the item, centering it */
+  margin: auto; /* The last, and *possibly* easierst method, is by setting the margin value */
+                /* of the item/items to 'auto', distributing an equal amount of space around */
+                /* the item/items */
+}
