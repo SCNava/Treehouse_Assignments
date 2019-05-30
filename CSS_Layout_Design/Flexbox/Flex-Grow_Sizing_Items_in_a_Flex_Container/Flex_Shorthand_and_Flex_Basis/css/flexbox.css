@@ -1,0 +1,30 @@
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+  flex-grow: 1; /* The browser attempts to equally distribute the space among/within */
+                /* the containers but the amount of content within some of the containers */
+                /* doesn't allow this to occur */
+  flex-basis: 200px; /* This is like setting a width for flex items. When used *with* */
+                     /* flex-grow, it can force items to have equal widths until they */
+                     /* become narrower than the given dimensions, at which point the */
+                     /* items will be begin to break or 'wrap' onto new lines */
+  
+  flex: 1; /* The shorthand of the flex-grow, flex-basis, and flex-basis properties */
+           /* Setting the flex property to 1 sets flex-grow: 1 and flex-basis: 0 which */
+           /* makes the items within the container proportional but *will not* redistribute */
+           /* the items as the page shrinks */
+  
+  flex: 1 200px; /* This makes the layout work exactly like flex-grow: 1 with flex-basis: 200px */
+}
+
+.item-2 {
+  flex-grow: 2; /* Even with flex: set, this will make item-2 twice the size of the other items */
+}
