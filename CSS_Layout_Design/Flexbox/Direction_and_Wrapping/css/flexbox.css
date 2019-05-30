@@ -1,0 +1,12 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+  flex-direction: column; /* Controls the layout/direction of the flex container's items */
+  flex-wrap: wrap; /* This controls whether or not the container wraps the items or cuts them off when */
+                   /* the container gets too small -- Very useful in rows of columns -- when columns run */
+                   /* out of space they automatically 'wrap' to the next line */
+  height: 280px;
+}
