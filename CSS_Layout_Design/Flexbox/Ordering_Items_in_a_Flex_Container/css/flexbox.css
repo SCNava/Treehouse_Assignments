@@ -1,0 +1,25 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item-6 {
+  order: -1; /* The default order of *all* items within a flex container is 0, so by setting any */
+             /* value less than 0 you can make any item the first item in the container */
+             /* Ordering can be useful for re-ordering columns on smaller screens (placing a */
+             /* featured content column above other columns in a one-column layout for example) */
+}
+
+.item-1 {
+  order: 1; /* By setting an item with any value greater than 0 you can make it appear last in the */
+            /* list */
+}
+
+.item-5 {
+  order: 2; /* This will make the item appear last in the list, after item-1 */
+}
