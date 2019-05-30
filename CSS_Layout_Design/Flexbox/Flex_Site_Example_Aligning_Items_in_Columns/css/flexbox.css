@@ -1,0 +1,46 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row, 
+  .col {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1;
+	}
+  
+  
+
+  .col {
+    flex: 1;
+    flex-direction: column;
+
+  }
+
+  .button {
+    margin-top: auto;  /* SETTING A ONE DIRECTIONAL MARGIN OF AUTO WILL TAKE UP SPACE AUTOMATICALLY IN */
+                       /* THAT DIRECTION, FORCING THE ITEM TO THE OPPOSITE SIDE ---- VERY USEFUL! */S
+    align-self:flex-start; /* This keeps the buttons from taking the whole width of the column */
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
