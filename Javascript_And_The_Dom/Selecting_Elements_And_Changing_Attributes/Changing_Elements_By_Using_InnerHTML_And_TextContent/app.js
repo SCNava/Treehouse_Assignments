@@ -22,6 +22,12 @@ button.addEventListener('click', () => {
    paragraph.innerHTML = input.value + ':';
 });
 
+// This updates the paragraph's title
+paragraph.title = "List Description"; // Hover over element to see the title
+
+// To get/set an element's class you must use .className
+paragraph.className = 'newClass';
+
 /*
   This gets the innerHTML of the unordered list and then replaces the list item with 'firecrackers' and 'ozark'
 */
